@@ -93,7 +93,7 @@ def main():
         if st.button("Summarize Differences"):
             summary = summarize_differences(pdf1_text, pdf2_text)
             st.subheader("Summary of Differences:")
-            st.write(summary)
+            st.write(summary.content)
         else:
             st.write("Please upload exactly two PDF files to compare.")
 
